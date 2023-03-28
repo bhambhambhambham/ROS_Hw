@@ -1,0 +1,5 @@
+<launch>
+    <node name = "cartesian_plan_and_execute" pkg = "hw" type = "hw3_PlanCartesianPath.py" output = "screen" launch-prefix="gnome-terminal --command"/>
+    <node name = "Pose_Array" pkg = "hw" type = "PoseArrayExtendsCartesianPath.py"/>
+    <include file="$(find panda_moveit_config)/launch/demo_config.launch"/>
+</launch>

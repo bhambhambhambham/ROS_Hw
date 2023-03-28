@@ -1,0 +1,4 @@
+<launch>
+    <node name = "movetojointgoal" pkg = "hw" type = "hw2_MoveToJointGoal.py"/>
+    <include file="$(find panda_moveit_config)/launch/demo_config.launch"/>
+</launch>

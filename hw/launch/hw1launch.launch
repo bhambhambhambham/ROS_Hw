@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find panda_moveit_config)/launch/hw1_config.rviz"/>
+    <node name="draw" pkg="hw" type="hw1_Draw.py" launch-prefix="gnome-terminal --command"/>
+</launch>
